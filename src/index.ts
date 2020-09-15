@@ -1,33 +1,31 @@
-import Express from "express"
+import Express from 'express'
 
 class App {
     private server: Express.Application;
 
-    constructor() {
-        this.server = Express()
-        this.middlewares();
-        this.routes();
-        this.unhandledRequests();
+    constructor () {
+      this.server = Express()
+      this.middlewares()
+      this.routes()
+      this.unhandledRequests()
     }
 
-    public getApplication(): Express.Application {
-        return this.server;
-    }
- 
-    private middlewares() {
-
+    public getApplication (): Express.Application {
+      return this.server
     }
 
-    private routes() {
-        this.server.use("/", (req, res) => {
-            res.json(req.headers)
-        })
-
+    private middlewares () {
     }
 
-    private unhandledRequests() {
+    private routes () {
+      this.server.use('/', (req, res) => {
+        res.json(req.headers)
+      })
+    }
+
+    private unhandledRequests () {
 
     }
- }
+}
 
- export default App
+export default App
