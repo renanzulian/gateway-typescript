@@ -68,9 +68,10 @@
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "paths": {
-      "@services/*": ["src/services/*"],
-      "@configs/*": ["src/configs/*"],
-      "@errors/*": ["src/errors/*"],
+      "@services/*": ["src/service/*"],
+      "@configs/*": ["src/config/*"],
+      "@commons/*": ["src/common/*"],
+      "@errors/*": ["src/error/*"],
       "@app/*": ["src/app/*"],
     }
   },

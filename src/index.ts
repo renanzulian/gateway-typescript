@@ -1,4 +1,6 @@
 import Express from 'express'
+import { userRoutes } from '@app/users/index'
+import { orderRoutes } from '@app/orders/index'
 
 class App {
     private server: Express.Application;
@@ -18,9 +20,8 @@ class App {
     }
 
     private routes () {
-      this.server.use('/', (req, res) => {
-        res.json(req.headers)
-      })
+      this.server.use('/users', userRoutes)
+      this.server.use('/orders', orderRoutes)
     }
 
     private unhandledRequests () {
