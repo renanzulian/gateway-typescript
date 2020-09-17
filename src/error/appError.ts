@@ -1,4 +1,4 @@
-import HttpStatusCode from './httpCode'
+import HttpStatusCode from '../common/httpCode'
 
 class AppError extends Error {
     public readonly httpCode: HttpStatusCode;

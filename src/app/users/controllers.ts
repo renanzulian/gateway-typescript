@@ -1,4 +1,4 @@
-import AppError from '@commons/errors'
+import AppError from '@errors/appError'
 import HttpStatusCode from '@commons/httpCode'
 
 class UserController {

@@ -1,4 +1,4 @@
-import AppError from '@commons/errors'
+import AppError from '@errors/appError'
 import { Response } from 'express'
 import HttpStatusCode from '../httpCode'
 import AppResponse from './appResponse'
